@@ -1,0 +1,59 @@
+/*
+ * FONT FACE
+***********************************/
+@import "compass/css3/font-face";
+@include font-face (
+    'Tuffy',
+    font-files(
+        'tuffy/Tuffy-webfont.woff',
+        'tuffy/Tuffy-webfont.ttf',
+        'tuffy/Tuffy-webfont.svg'
+    ),
+    'tuffy/Tuffy-webfont.eot',
+    400,
+    normal
+);
+@include font-face (
+    'Tuffy',
+    font-files(
+        'tuffy/Tuffy_Italic-webfont.woff',
+        'tuffy/Tuffy_Italic-webfont.ttf',
+        'tuffy/Tuffy_Italic-webfont.svg'
+    ),
+    'tuffy/Tuffy_Italic-webfont.eot',
+    400,
+    oblique
+);
+@include font-face (
+    'Tuffy',
+    font-files(
+        'tuffy/Tuffy_Bold-webfont.woff',
+        'tuffy/Tuffy_Bold-webfont.ttf',
+        'tuffy/Tuffy_Bold-webfont.svg#Tuffy'
+    ),
+    'tuffy/Tuffy_Bold-webfont.eot',
+    700,
+    normal
+);
+@include font-face (
+    'Tuffy',
+    font-files(
+        'tuffy/Tuffy_Bold_Italic-webfont.woff',
+        'tuffy/Tuffy_Bold_Italic-webfont.ttf',
+        'tuffy/Tuffy_Bold_Italic-webfont.svg#Tuffy'
+    ),
+    'tuffy/Tuffy_Bold_Italic-webfont.eot',
+    700,
+    oblique
+);
+@include font-face (
+	'icomoon',
+        font-files(
+            'icomoon/icomoon.woff?q6kam8',
+            'icomoon/icomoon.ttf?q6kam8',
+            'icomoon/icomoon.svg?q6kam8#icomoon'
+        ),
+        'icomoon/icomoon.eot?q6kam8',
+        400,
+        normal
+);

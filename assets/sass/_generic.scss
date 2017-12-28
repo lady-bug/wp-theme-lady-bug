@@ -1,0 +1,163 @@
+/* Generic
+-------------------------------------------------------------- */
+body{
+    color:$p-brown;
+    background-color:white;
+    background-image:url(assets/img/bg.png);
+    font-size:100%;
+    /*
+        100% is equivalent to setting the font size to the user's preference
+        => default font is 1rem = 16px ($rembase)
+        62.5%   => default font is 1rem = 10px ($rembase)
+        75%     => default font is 1rem = 12px ($rembase)
+        87.5%   => default font is 1rem = 14px ($rembase)
+    */
+    line-height:100%;
+    height:100%;
+}
+html,
+button,
+input,
+select,
+textarea{
+    font-family:'Tuffy',Arial,sans-serif;
+}
+/* HEADINGS
+----------------------------------------------*/
+h1{
+    border-bottom:1px solid $p-brown;
+    font-size:2rem;
+    font-weight:400;
+    line-height:1.5;
+    margin:0 0 1em 0;
+}
+h2{
+    font-size:1.7rem;
+    font-weight:400;
+    line-height:1.5;
+    margin:0 0 .5em 0;
+}
+h3{
+    font-size:1.4rem;
+    font-weight:400;
+    line-height:1.5;
+    margin:0 0 .5em 0;
+}
+h4{
+    font-size:1.3rem;
+    font-weight:400;
+    line-height:1.5;
+    margin:0 0 .5em 0;
+}
+p,blockquote,li{
+    font-size:1rem;
+    font-weight:400;
+    line-height:1.5;
+    margin:0 0 .5em 0;
+}
+pre{
+    overflow-y:hidden;
+}
+em{
+    font-style:oblique;
+    font-size:1em;
+    line-height:1;
+}
+a,a:link{
+    color:$s-green;
+    font-size:1em;
+    line-height:1;
+    outline:none;
+    text-decoration:none;
+}
+a:visited{}
+a:hover,a:focus,a:active{
+    outline:none;
+    text-decoration:underline;
+}
+strong{
+    font-weight:700;
+    font-size:1em;
+    line-height:1;
+}
+
+img{
+    max-width:100%;
+}
+::-moz-selection{
+    background-color:$s-lighter-green;
+}
+::selection{
+    background-color:$s-lighter-green;
+}
+/* FORMS
+----------------------------------------------*/
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:$p-light-brown;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:$p-light-brown;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:$p-light-brown;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:$p-light-brown;
+}
+legend{
+    border:none 0;
+    display:block;
+    font-size:1rem;
+    line-height:1;
+    width:100%;
+}
+legend span{
+    display:block;
+    font-size:1rem;
+    line-height:1;
+}
+label,button,input,select,textarea{
+    color:$s-brown;
+    display:inline-block;
+    font-size:1rem;
+    padding:.5rem;
+    vertical-align:middle;
+}
+button,input,select,textarea{
+    border:1px solid $s-green;
+    /* remove inconsistent focus state */
+    outline:none;
+    @include transition(all 0.30s ease-in-out);
+}
+textarea{
+    resize:none;
+    display:block;
+}
+button,
+input[type=button],
+input[type=submit],
+input[type=reset]{
+    color:white;
+    background-color: $s-green;
+}
+button:focus,input:focus,select:focus,textarea:focus,
+button:hover,input:hover,select:hover,textarea:hover{
+    /* set consistent focus / hover state */
+    box-shadow: 0 0 5px $s-light-green;
+}
+/*reset buttons*/
+input[type=reset]{
+
+}
+input[type=reset]:hover,input[type=reset]:focus{
+
+}
+/*submit buttons*/
+button,input[type=button],input[type=submit]{
+
+}
+button:hover,button:focus,
+input[type=button]:hover,input[type=button]:focus,
+input[type=submit]:hover,input[type=submit]:focus{
+
+}

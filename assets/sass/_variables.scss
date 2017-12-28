@@ -1,0 +1,164 @@
+/*
+ * Palette:
+ *       Primary
+ *          light brown      bb8855 - 187 136  85
+ *           orange          ff5511 - 255  85  17
+ *           brown           443333 -  68  51  51
+ *           brown light     6f5d5c - 111  93  92
+ *           brown dark      1e0c0c -  30  12  12
+ *           green           ddee99 - 221 238 153
+ *           light green     ffffdd - 255 255 221
+ *
+ *       Secondary
+ *           green           588303 -  88 131   3
+ *           light green     81b922 - 129 185  34
+ *           lighter green   b5da6e - 181 218 110
+ *           red             eb3700 - 235  55   0
+ *           brown           473a2c -  71  58  44
+ *
+ *      Grey range
+ *                           fdfdfd - 253 253 253   bg
+ *                           f0f0f0 - 240 240 240   border
+******************************************************/
+
+$p-light-brown:rgb(187,136,85);
+$p-orange:rgb(255,85,17);
+$p-brown:rgb(68,51,51);
+$p-brown-light:#6f5d5c;
+$p-brown-dark:#1e0c0c;
+$p-green:rgb(221,238,153);
+$p-light-green:rgb(255,255,221);
+
+$s-green:rgb(88,131,3);
+$s-light-green:rgb(129,185,34);
+$s-lighter-green:rgb(181,218,110);
+$s-red:rgb(235,55,0);
+$s-brown:rgb(71,58,44);
+
+$white-transparency:rgba(255,255,255,.95);
+
+$lighter-grey:rgb(253,253,253);
+$light-grey:rgb(240,240,240);
+$grey:rgb(200,200,200);
+
+/*
+ * BORDERS
+******************************************************/
+$border:1px solid $p-brown;
+$border-double:3px double $p-brown;
+$border-grey:1px solid $light-grey;
+$border-grey-double:3px double $light-grey;
+$border-green:1px solid $s-green;
+
+/*
+ * BREAKPOINTS
+******************************************************/
+$breakpoints:(
+    xxs:20em,   //320
+    xs: 40em,   //640
+    s:  48em,   //768
+    m:  60em,   //960
+    xm: 64em,   //1024
+    l:  80em,   //1280
+    xl: 90em    //1440
+);
+
+/*
+ * MEDIAQUERIES
+******************************************************/
+@mixin respond-to($breakpoint){
+    // Retrieves the value from the key
+    $value: map-get($breakpoints, $breakpoint);
+
+    @if($mqs){
+        // If the key exists in the map
+        @if ($value != null) {
+          // Prints a media query based on the value
+          @media only screen and (min-device-width:$value) and (min-width:$value),
+            only screen and (min-device-width:$value) and (min-width:$value) and (min-aspect-ratio: 1/1)/*landscape*/{
+                @content;
+            }
+          }
+
+        // If the key doesn't exist in the map
+        @else {
+          @warn "Unfortunately, no value could be retrieved from '#{$breakpoint}'. "
+              + "Please make sure it is defined in '$breakpoints' map.";
+        }
+    }
+    @else{
+        @content;
+    }
+}
+
+/*
+ * CSS3 PROPERTIES
+******************************************************/
+
+// Border Radius
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+// Transitions
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+     -moz-transition: $transition;
+       -o-transition: $transition;
+          transition: $transition;
+}
+
+@mixin transition-delay($transition-delay) {
+  -webkit-transition-delay: $transition-delay;
+     -moz-transition-delay: $transition-delay;
+       -o-transition-delay: $transition-delay;
+          transition-delay: $transition-delay;
+}
+
+@mixin transition-duration($transition-duration) {
+  -webkit-transition-duration: $transition-duration;
+     -moz-transition-duration: $transition-duration;
+       -o-transition-duration: $transition-duration;
+          transition-duration: $transition-duration;
+}
+// Transformations
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+     -moz-transform: $transform;
+      -ms-transform: $transform;
+       -o-transform: $transform;
+          transform: $transform;
+}
+
+@mixin translateX($x) {
+  -webkit-transform: translateX($x);
+     -moz-transform: translateX($x);
+      -ms-transform: translateX($x);
+       -o-transform: translateX($x);
+          transform: translateX($x);
+}
+@mixin rotate($degrees) {
+  -webkit-transform: rotate($degrees);
+     -moz-transform: rotate($degrees);
+      -ms-transform: rotate($degrees);
+       -o-transform: rotate($degrees);
+          transform: rotate($degrees);
+}
+// Box sizing
+@mixin box-sizing($boxmodel) {
+  -webkit-box-sizing: $boxmodel;
+     -moz-box-sizing: $boxmodel;
+          box-sizing: $boxmodel;
+}
+// Opacity
+@mixin opacity($opacity) {
+  opacity: $opacity / 100;
+}
+// Shadow
+@mixin shadow($rgb) {
+    -webkit-box-shadow: 0px 0px 10px 0px $rgb;
+    -moz-box-shadow: 0px 0px 10px 0px $rgb;
+    box-shadow: 0px 0px 10px 0px $rgb;
+}

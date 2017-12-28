@@ -1,0 +1,30 @@
+/* Accordion Styles */
+.accordion {
+    
+    
+}
+.accordion-title {
+    cursor:pointer;
+    margin:0;
+    background-color:rgb(240,240,240);
+    padding:.5rem 1rem;
+    font-size:1.1rem;
+    font-weight:700;
+    margin-top:1px;
+}
+.accordion-title:hover,
+.accordion-title.open:hover{
+    background-color:rgb(250,250,250);
+}
+.accordion-title.open {
+    background-color:rgb(253,253,253);
+}
+.accordion-title:first-child {
+    
+}
+.accordion-content {
+    background-color:rgb(253,253,253);
+    border-top:1px solid rgb(250,250,250);
+    padding:1rem 0;
+}
+.accordion-content ul{margin:0;}

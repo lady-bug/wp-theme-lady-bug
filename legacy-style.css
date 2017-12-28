@@ -1,0 +1,1664 @@
+/*
+***************************************************************************************
+ * LEGACY STYLE FILE
+ * NO MEDIA QUERIES VERSION
+***************************************************************************************
+ */
+/* SASS & COMPASS
+ *  RUBY RAILS
+ *  compass watch /wp-content/themes/lady-bug
+ *  _name-file.scss won't be compiled, only legacy-style.scss will be parsed
+-----------------------------------------------------------------------*/
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 9, assets/sass/_antiscreen.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+/* line 19, assets/sass/_antiscreen.scss */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 33, assets/sass/_antiscreen.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 54, assets/sass/_antiscreen.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 67, assets/sass/_antiscreen.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 77, assets/sass/_antiscreen.scss */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 89, assets/sass/_antiscreen.scss */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 97, assets/sass/_antiscreen.scss */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 109, assets/sass/_antiscreen.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 117, assets/sass/_antiscreen.scss */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 126, assets/sass/_antiscreen.scss */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 135, assets/sass/_antiscreen.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 144, assets/sass/_antiscreen.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 153, assets/sass/_antiscreen.scss */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 161, assets/sass/_antiscreen.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 169, assets/sass/_antiscreen.scss */
+sup {
+  top: -0.5em; }
+
+/* line 173, assets/sass/_antiscreen.scss */
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 184, assets/sass/_antiscreen.scss */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 192, assets/sass/_antiscreen.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 203, assets/sass/_antiscreen.scss */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 211, assets/sass/_antiscreen.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 221, assets/sass/_antiscreen.scss */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 229, assets/sass/_antiscreen.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 252, assets/sass/_antiscreen.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 266, assets/sass/_antiscreen.scss */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 277, assets/sass/_antiscreen.scss */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 290, assets/sass/_antiscreen.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 302, assets/sass/_antiscreen.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 311, assets/sass/_antiscreen.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 322, assets/sass/_antiscreen.scss */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 334, assets/sass/_antiscreen.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 346, assets/sass/_antiscreen.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 357, assets/sass/_antiscreen.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 370, assets/sass/_antiscreen.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 379, assets/sass/_antiscreen.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 390, assets/sass/_antiscreen.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 399, assets/sass/_antiscreen.scss */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 408, assets/sass/_antiscreen.scss */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 419, assets/sass/_antiscreen.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 424, assets/sass/_antiscreen.scss */
+td,
+th {
+  padding: 0; }
+
+/*
+ * Palette:
+ *       Primary
+ *          light brown      bb8855 - 187 136  85
+ *           orange          ff5511 - 255  85  17
+ *           brown           443333 -  68  51  51
+ *           brown light     6f5d5c - 111  93  92
+ *           brown dark      1e0c0c -  30  12  12
+ *           green           ddee99 - 221 238 153
+ *           light green     ffffdd - 255 255 221
+ *
+ *       Secondary
+ *           green           588303 -  88 131   3
+ *           light green     81b922 - 129 185  34
+ *           lighter green   b5da6e - 181 218 110
+ *           red             eb3700 - 235  55   0
+ *           brown           473a2c -  71  58  44
+ *
+ *      Grey range
+ *                           fdfdfd - 253 253 253   bg
+ *                           f0f0f0 - 240 240 240   border
+******************************************************/
+/*
+ * BORDERS
+******************************************************/
+/*
+ * BREAKPOINTS
+******************************************************/
+/*
+ * MEDIAQUERIES
+******************************************************/
+/*
+ * CSS3 PROPERTIES
+******************************************************/
+/*
+ * FONT FACE
+***********************************/
+@font-face {
+  font-family: "Tuffy";
+  src: url('assets/fonts/tuffy/Tuffy-webfont.eot?1514456701');
+  src: url('assets/fonts/tuffy/Tuffy-webfont.eot?&1514456701#iefix') format('embedded-opentype'), url('assets/fonts/tuffy/Tuffy-webfont.woff?1514456700') format('woff'), url('assets/fonts/tuffy/Tuffy-webfont.ttf?1514456700') format('truetype'), url('assets/fonts/tuffy/Tuffy-webfont.svg?1514456701') format('svg');
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: "Tuffy";
+  src: url('assets/fonts/tuffy/Tuffy_Italic-webfont.eot?1514456698');
+  src: url('assets/fonts/tuffy/Tuffy_Italic-webfont.eot?&1514456698#iefix') format('embedded-opentype'), url('assets/fonts/tuffy/Tuffy_Italic-webfont.woff?1514456697') format('woff'), url('assets/fonts/tuffy/Tuffy_Italic-webfont.ttf?1514456697') format('truetype'), url('assets/fonts/tuffy/Tuffy_Italic-webfont.svg?1514456698') format('svg');
+  font-weight: 400;
+  font-style: oblique; }
+@font-face {
+  font-family: "Tuffy";
+  src: url('assets/fonts/tuffy/Tuffy_Bold-webfont.eot?1514456700');
+  src: url('assets/fonts/tuffy/Tuffy_Bold-webfont.eot?&1514456700#iefix') format('embedded-opentype'), url('assets/fonts/tuffy/Tuffy_Bold-webfont.woff?1514456699') format('woff'), url('assets/fonts/tuffy/Tuffy_Bold-webfont.ttf?1514456699') format('truetype'), url('assets/fonts/tuffy/Tuffy_Bold-webfont.svg?1514456700#Tuffy') format('svg');
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: "Tuffy";
+  src: url('assets/fonts/tuffy/Tuffy_Bold_Italic-webfont.eot?1514456699');
+  src: url('assets/fonts/tuffy/Tuffy_Bold_Italic-webfont.eot?&1514456699#iefix') format('embedded-opentype'), url('assets/fonts/tuffy/Tuffy_Bold_Italic-webfont.woff?1514456698') format('woff'), url('assets/fonts/tuffy/Tuffy_Bold_Italic-webfont.ttf?1514456699') format('truetype'), url('assets/fonts/tuffy/Tuffy_Bold_Italic-webfont.svg?1514456699#Tuffy') format('svg');
+  font-weight: 700;
+  font-style: oblique; }
+@font-face {
+  font-family: "icomoon";
+  src: url('assets/fonts/icomoon/icomoon.eot?q6kam8');
+  src: url('assets/fonts/icomoon/icomoon.eot?q6kam8?#iefix') format('embedded-opentype'), url('assets/fonts/icomoon/icomoon.woff?q6kam8') format('woff'), url('assets/fonts/icomoon/icomoon.ttf?q6kam8') format('truetype'), url('assets/fonts/icomoon/icomoon.svg?q6kam8#icomoon') format('svg');
+  font-weight: 400;
+  font-style: normal; }
+/* Generic
+-------------------------------------------------------------- */
+/* line 3, assets/sass/_generic.scss */
+body {
+  color: #443333;
+  background-color: white;
+  background-image: url(assets/img/bg.png);
+  font-size: 100%;
+  /*
+      100% is equivalent to setting the font size to the user's preference
+      => default font is 1rem = 16px ($rembase)
+      62.5%   => default font is 1rem = 10px ($rembase)
+      75%     => default font is 1rem = 12px ($rembase)
+      87.5%   => default font is 1rem = 14px ($rembase)
+  */
+  line-height: 100%;
+  height: 100%; }
+
+/* line 18, assets/sass/_generic.scss */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: 'Tuffy',Arial,sans-serif; }
+
+/* HEADINGS
+----------------------------------------------*/
+/* line 27, assets/sass/_generic.scss */
+h1 {
+  border-bottom: 1px solid #443333;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0 0 1em 0; }
+
+/* line 34, assets/sass/_generic.scss */
+h2 {
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0 0 .5em 0; }
+
+/* line 40, assets/sass/_generic.scss */
+h3 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0 0 .5em 0; }
+
+/* line 46, assets/sass/_generic.scss */
+h4 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0 0 .5em 0; }
+
+/* line 52, assets/sass/_generic.scss */
+p, blockquote, li {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0 0 .5em 0; }
+
+/* line 58, assets/sass/_generic.scss */
+pre {
+  overflow-y: hidden; }
+
+/* line 61, assets/sass/_generic.scss */
+em {
+  font-style: oblique;
+  font-size: 1em;
+  line-height: 1; }
+
+/* line 66, assets/sass/_generic.scss */
+a, a:link {
+  color: #588303;
+  font-size: 1em;
+  line-height: 1;
+  outline: none;
+  text-decoration: none; }
+
+/* line 74, assets/sass/_generic.scss */
+a:hover, a:focus, a:active {
+  outline: none;
+  text-decoration: underline; }
+
+/* line 78, assets/sass/_generic.scss */
+strong {
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 1; }
+
+/* line 84, assets/sass/_generic.scss */
+img {
+  max-width: 100%; }
+
+/* line 87, assets/sass/_generic.scss */
+::-moz-selection {
+  background-color: #b5da6e; }
+
+/* line 90, assets/sass/_generic.scss */
+::selection {
+  background-color: #b5da6e; }
+
+/* FORMS
+----------------------------------------------*/
+/* line 95, assets/sass/_generic.scss */
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #bb8855; }
+
+/* line 98, assets/sass/_generic.scss */
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #bb8855; }
+
+/* line 101, assets/sass/_generic.scss */
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #bb8855; }
+
+/* line 104, assets/sass/_generic.scss */
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #bb8855; }
+
+/* line 107, assets/sass/_generic.scss */
+legend {
+  border: none 0;
+  display: block;
+  font-size: 1rem;
+  line-height: 1;
+  width: 100%; }
+
+/* line 114, assets/sass/_generic.scss */
+legend span {
+  display: block;
+  font-size: 1rem;
+  line-height: 1; }
+
+/* line 119, assets/sass/_generic.scss */
+label, button, input, select, textarea {
+  color: #473a2c;
+  display: inline-block;
+  font-size: 1rem;
+  padding: .5rem;
+  vertical-align: middle; }
+
+/* line 126, assets/sass/_generic.scss */
+button, input, select, textarea {
+  border: 1px solid #588303;
+  /* remove inconsistent focus state */
+  outline: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+/* line 132, assets/sass/_generic.scss */
+textarea {
+  resize: none;
+  display: block; }
+
+/* line 136, assets/sass/_generic.scss */
+button,
+input[type=button],
+input[type=submit],
+input[type=reset] {
+  color: white;
+  background-color: #588303; }
+
+/* line 143, assets/sass/_generic.scss */
+button:focus, input:focus, select:focus, textarea:focus,
+button:hover, input:hover, select:hover, textarea:hover {
+  /* set consistent focus / hover state */
+  box-shadow: 0 0 5px #81b922; }
+
+/*reset buttons*/
+/*submit buttons*/
+/* Skip & Accessibile Elements
+----------------------------------------------*/
+/* line 3, assets/sass/_accessible.scss */
+.accessible, .nav p span {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/* line 13, assets/sass/_accessible.scss */
+.skip {
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%; }
+
+/* line 20, assets/sass/_accessible.scss */
+.skip ul, .skip ol {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+/* line 25, assets/sass/_accessible.scss */
+.skip a, .skip a:link {
+  left: -99999px;
+  position: absolute;
+  top: 30px;
+  font: 700 2rem/1.5 Quicksand;
+  /*margin:0 auto;*/
+  padding: .5em;
+  text-decoration: none;
+  width: 75%;
+  z-index: 9999; }
+
+/* line 36, assets/sass/_accessible.scss */
+.skip a:focus, .skip a:active {
+  left: 10%; }
+
+/* LAYOUT
+-------------------------------------------------------------- */
+/* line 3, assets/sass/_layout.scss */
+.clearfix {
+  *zoom: 1; }
+
+/* line 6, assets/sass/_layout.scss */
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0; }
+
+/* line 12, assets/sass/_layout.scss */
+.clearfix:after {
+  clear: both; }
+
+/* line 15, assets/sass/_layout.scss */
+.required {
+  color: #ff5511; }
+
+/* line 18, assets/sass/_layout.scss */
+#branding {
+  margin-bottom: 1em; }
+  /* line 20, assets/sass/_layout.scss */
+  #branding #site-about {
+    margin: 0 0 1em 0; }
+    /* line 22, assets/sass/_layout.scss */
+    #branding #site-about p {
+      margin: 0; }
+  /* line 26, assets/sass/_layout.scss */
+  #branding #site-description {
+    margin: 0 0 1em 0; }
+    /* line 28, assets/sass/_layout.scss */
+    #branding #site-description p {
+      font-weight: 700;
+      margin: 0; }
+  /* line 34, assets/sass/_layout.scss */
+  #branding #site-linked-in p {
+    margin: 0; }
+  /* line 37, assets/sass/_layout.scss */
+  #branding #site-linked-in a {
+    color: #443333;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 0; }
+  /* line 43, assets/sass/_layout.scss */
+  #branding #site-linked-in a:hover, #branding #site-linked-in a:focus {
+    color: #588303; }
+  /* line 48, assets/sass/_layout.scss */
+  #branding #site-logo img {
+    margin: 0; }
+  /* line 51, assets/sass/_layout.scss */
+  #branding #site-logo a {
+    display: inline-block;
+    text-decoration: none;
+    line-height: 0;
+    /*@include border-radius(.4rem);*/
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+  /* line 58, assets/sass/_layout.scss */
+  #branding #site-logo a:hover, #branding #site-logo a:focus {
+    box-shadow: 0 0 5px #ff5511; }
+
+/* line 63, assets/sass/_layout.scss */
+#site-info {
+  border-top: 1px solid #443333;
+  /*max-width:1440px;*/
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: .5rem 1rem; }
+  /* line 68, assets/sass/_layout.scss */
+  #site-info p {
+    margin: 0; }
+  /* line 71, assets/sass/_layout.scss */
+  #site-info a {
+    color: #443333;
+    font-size: .8rem;
+    text-decoration: none; }
+  /* line 76, assets/sass/_layout.scss */
+  #site-info a:hover, #site-info a:focus {
+    color: #588303; }
+
+/* line 81, assets/sass/_layout.scss */
+#page {
+  max-width: 1440px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 85, assets/sass/_layout.scss */
+.js #page {
+  padding: 2.45rem 0 0 0; }
+
+/* line 88, assets/sass/_layout.scss */
+#header {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 1rem; }
+
+/* line 92, assets/sass/_layout.scss */
+#main {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 1rem; }
+  /* line 95, assets/sass/_layout.scss */
+  #main .page {
+    margin-bottom: 2rem; }
+
+/* line 99, assets/sass/_layout.scss */
+#container {
+  -webkit-transition: all 1s ease 0s;
+  -moz-transition: all 1s ease 0s;
+  -o-transition: all 1s ease 0s;
+  transition: all 1s ease 0s; }
+
+/* line 102, assets/sass/_layout.scss */
+#sidebar {
+  border-top: 3px double #443333;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 1rem;
+  margin: 1rem; }
+
+/* line 108, assets/sass/_layout.scss */
+.post {
+  min-height: 10em; }
+
+/* line 111, assets/sass/_layout.scss */
+.entry-thumbnail {
+  margin: 0; }
+
+/* line 114, assets/sass/_layout.scss */
+.entry-thumbnail img {
+  height: auto;
+  width: 100%; }
+
+/* line 118, assets/sass/_layout.scss */
+.post-meta {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  /* line 123, assets/sass/_layout.scss */
+  .post-meta .post-meta-key {
+    display: none; }
+
+/* UPGRADE
+-----------------------------------*/
+/* line 130, assets/sass/_layout.scss */
+#upgrade {
+  max-width: 1280px;
+  text-align: center;
+  background-color: #ffffdd; }
+  /* line 134, assets/sass/_layout.scss */
+  #upgrade p {
+    padding: 1rem; }
+
+/* WORDPRESS REQUIRED
+-------------------------------------------------------------- */
+/* line 141, assets/sass/_layout.scss */
+.wp-caption {
+  font-weight: 400; }
+
+/* line 142, assets/sass/_layout.scss */
+.wp-caption-text {
+  font-weight: 400; }
+
+/* line 143, assets/sass/_layout.scss */
+.sticky {
+  font-weight: 400; }
+
+/* line 144, assets/sass/_layout.scss */
+.gallery-caption {
+  font-weight: 400; }
+
+/* line 145, assets/sass/_layout.scss */
+.bypostauthor {
+  font-weight: 400; }
+
+/* line 146, assets/sass/_layout.scss */
+.alignright {
+  font-weight: 400; }
+
+/* line 147, assets/sass/_layout.scss */
+.alignleft {
+  font-weight: 400; }
+
+/* line 148, assets/sass/_layout.scss */
+.aligncenter {
+  font-weight: 400; }
+
+/* recommended */
+/* line 151, assets/sass/_layout.scss */
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+  max-width: 100%;
+  height: auto; }
+
+/*required but hidden for now*/
+/* line 161, assets/sass/_layout.scss */
+.meta {
+  display: none; }
+
+/* Override css for Category Posts Widget plugin
+-------------------------------------------------------------- */
+/* line 165, assets/sass/_layout.scss */
+.cat-post-item {
+  border-bottom: none 0 !important; }
+
+/* line 168, assets/sass/_layout.scss */
+.cat-post-item.hover .post-title {
+  text-decoration: underline; }
+
+/* NAVIGATION
+-------------------------------------------------------------- */
+/* line 175, assets/sass/_layout.scss */
+#menu li {
+  margin: 0; }
+/* line 178, assets/sass/_layout.scss */
+#menu a {
+  color: #443333;
+  font-size: .9rem;
+  margin-bottom: 0;
+  padding: .5rem 0;
+  text-decoration: none;
+  text-transform: uppercase; }
+/* line 186, assets/sass/_layout.scss */
+#menu a:hover, #menu a:focus {
+  color: #588303; }
+
+/* MOBILE NAVIGATION
+-------------------------------------------------------------- */
+/* line 194, assets/sass/_layout.scss */
+.js.no-touch #mobile-sticky-navigation:hover {
+  background-color: #bb8855;
+  cursor: pointer; }
+/* line 198, assets/sass/_layout.scss */
+.js #mobile-sticky-navigation {
+  background-color: #443333;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: white;
+  padding: .05rem;
+  position: fixed;
+  -webkit-transition: all 1s ease 0s;
+  -moz-transition: all 1s ease 0s;
+  -o-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+  width: 100%;
+  z-index: 51;
+  -webkit-box-shadow: 0px 0px 10px 0px #473a2c;
+  -moz-box-shadow: 0px 0px 10px 0px #473a2c;
+  box-shadow: 0px 0px 10px 0px #473a2c; }
+  /* line 209, assets/sass/_layout.scss */
+  .js #mobile-sticky-navigation [class^="icon"] {
+    display: inline-block;
+    font-size: 1rem;
+    line-height: 1;
+    padding: .3rem;
+    vertical-align: middle; }
+  /* line 216, assets/sass/_layout.scss */
+  .js #mobile-sticky-navigation .close {
+    display: none; }
+  /* line 219, assets/sass/_layout.scss */
+  .js #mobile-sticky-navigation em {
+    display: inline-block;
+    font-size: 1.3rem;
+    font-style: normal;
+    line-height: 1;
+    padding: .3rem;
+    vertical-align: middle; }
+/* line 228, assets/sass/_layout.scss */
+.js #header {
+  position: absolute;
+  width: 16rem;
+  left: -16rem; }
+/* line 234, assets/sass/_layout.scss */
+.js .show-mobile-nav #header {
+  left: 0; }
+/* line 237, assets/sass/_layout.scss */
+.js .show-mobile-nav #container {
+  position: fixed;
+  width: 100%;
+  -webkit-transform: translateX(17em);
+  -moz-transform: translateX(17em);
+  -ms-transform: translateX(17em);
+  -o-transform: translateX(17em);
+  transform: translateX(17em);
+  opacity: .1;
+  border-left: 1px solid #443333; }
+/* line 244, assets/sass/_layout.scss */
+.js .show-mobile-nav #site-info {
+  display: none; }
+/* line 247, assets/sass/_layout.scss */
+.js .show-mobile-nav #mobile-sticky-navigation {
+  background-color: #bb8855; }
+  /* line 249, assets/sass/_layout.scss */
+  .js .show-mobile-nav #mobile-sticky-navigation .open {
+    display: none; }
+  /* line 252, assets/sass/_layout.scss */
+  .js .show-mobile-nav #mobile-sticky-navigation .close {
+    display: inline-block; }
+
+/* RESPONSIVE VIDEOS
+-------------------------------------------------------------- */
+/* line 261, assets/sass/_layout.scss */
+.video-wrapper {
+  max-width: 600px;
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0; }
+
+/* line 268, assets/sass/_layout.scss */
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+/* PAGINATION
+-------------------------------------------------------------- */
+/* line 278, assets/sass/_layout.scss */
+#pagination {
+  clear: left;
+  margin-top: 2rem;
+  padding: .5rem; }
+  /* line 282, assets/sass/_layout.scss */
+  #pagination a {
+    text-decoration: none;
+    color: #443333; }
+    /* line 286, assets/sass/_layout.scss */
+    #pagination a:hover .title, #pagination a:focus .title, #pagination a:hover .title, #pagination a:focus .title {
+      color: #588303; }
+  /* line 291, assets/sass/_layout.scss */
+  #pagination span, #pagination a {
+    display: inline-block;
+    vertical-align: middle; }
+  /* line 295, assets/sass/_layout.scss */
+  #pagination .item {
+    color: #6f5d5c;
+    font-size: .8rem;
+    text-transform: uppercase; }
+  /* line 300, assets/sass/_layout.scss */
+  #pagination .title {
+    display: block;
+    margin-top: .5rem; }
+  /* line 304, assets/sass/_layout.scss */
+  #pagination .past-page {
+    float: left;
+    text-align: left; }
+  /* line 309, assets/sass/_layout.scss */
+  #pagination .next-page {
+    float: right;
+    text-align: right; }
+  /* line 313, assets/sass/_layout.scss */
+  #pagination .button {
+    color: #6f5d5c;
+    font-size: .8rem;
+    padding: 0 .5rem; }
+
+/* WIDGET
+-----------------------------------*/
+/* line 322, assets/sass/_layout.scss */
+.widget {
+  margin: 0 0 2em 0; }
+  /* line 324, assets/sass/_layout.scss */
+  .widget ul {
+    list-style: none none;
+    margin: 0;
+    padding: 0; }
+  /* line 329, assets/sass/_layout.scss */
+  .widget a {
+    display: block;
+    line-height: 1.5;
+    margin-bottom: .5rem; }
+
+/* line 337, assets/sass/_layout.scss */
+#sidebar .widget a {
+  background: url(assets/icomoon-icons/SVG/file-text2.svg) no-repeat 0 0.1rem;
+  padding-left: 1.5rem; }
+/* line 341, assets/sass/_layout.scss */
+#sidebar .widget:nth-of-type(1) a {
+  background-image: url(assets/icomoon-icons/SVG/newspaper.svg); }
+/* line 344, assets/sass/_layout.scss */
+#sidebar .widget:nth-of-type(2) a {
+  background-image: url(assets/icomoon-icons/SVG/file-text.svg); }
+/* line 347, assets/sass/_layout.scss */
+#sidebar .widget:nth-of-type(3) a {
+  background-image: url(assets/icomoon-icons/SVG/link.svg); }
+
+/* SPOTLIGHTS
+-----------------------------------*/
+/* line 356, assets/sass/_layout.scss */
+#showcase .widget {
+  margin: 0; }
+/* line 359, assets/sass/_layout.scss */
+#showcase h2 {
+  position: absolute;
+  z-index: -1;
+  color: white; }
+/* line 364, assets/sass/_layout.scss */
+#showcase .cat-post-item {
+  margin-bottom: 2rem;
+  position: relative;
+  padding: 1rem 1rem 1rem calc(100px + 2rem) !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+/* line 370, assets/sass/_layout.scss */
+#showcase .post-title {
+  font-size: 1.4rem; }
+/* line 379, assets/sass/_layout.scss */
+#showcase a:not(.post-title) {
+  display: block;
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  width: 100px; }
+/* line 386, assets/sass/_layout.scss */
+#showcase a:not(.post-title) img {
+  height: auto;
+  width: 100%; }
+/* line 390, assets/sass/_layout.scss */
+#showcase p {
+  margin: 0; }
+
+/* CATEGORY TEMPLATE
+-------------------------------------------------------------- */
+/* line 398, assets/sass/_layout.scss */
+.category #main {
+  border: none; }
+/* line 399, assets/sass/_layout.scss */
+.category .feature {
+  margin-bottom: 2rem;
+  padding: 1rem 1rem 1rem calc(100px + 2rem);
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+/* line 405, assets/sass/_layout.scss */
+.category .feature.hover {
+  cursor: pointer; }
+/* line 408, assets/sass/_layout.scss */
+.category .feature.hover h2 a {
+  text-decoration: underline; }
+/* line 411, assets/sass/_layout.scss */
+.category .entry-thumbnail {
+  display: block;
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  width: 100px; }
+/* line 418, assets/sass/_layout.scss */
+.category h2 {
+  font-size: 1.4rem; }
+/* line 421, assets/sass/_layout.scss */
+.category h2 a {
+  display: block;
+  line-height: 1.5; }
+
+/* ICOMOON
+-----------------------------------*/
+/* line 429, assets/sass/_layout.scss */
+[class^="icon-"], [class*=" icon-"] {
+  color: white;
+  background-color: #443333;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* line 443, assets/sass/_layout.scss */
+[class^="icon-"], [class*=" icon-"] {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: .3rem; }
+
+/* line 450, assets/sass/_layout.scss */
+svg.icon {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: currentColor; }
+
+/* line 457, assets/sass/_layout.scss */
+a:hover [class^="icon-"], a:hover [class*=" icon-"],
+[class^="icon-"]:hover, [class*=" icon-"]:hover,
+a:focus [class^="icon-"], a:focus [class*=" icon-"],
+[class^="icon-"]:focus, [class*=" icon-"]:focus {
+  background-color: #bb8855; }
+
+/* RESPONSIVE TABS
+-------------------------------------------------------------- */
+/* line 467, assets/sass/_layout.scss */
+.js .responsive-tabs-wrapper {
+  border: 0 !important; }
+/* line 470, assets/sass/_layout.scss */
+.js .responsive-tabs {
+  color: #443333 !important; }
+  /* line 473, assets/sass/_layout.scss */
+  .js .responsive-tabs .responsive-tabs__heading {
+    background-color: transparent !important;
+    border-width: 0 0 1px 0 !important;
+    border-color: #bb8855 !important;
+    color: #bb8855 !important; }
+    /* line 479, assets/sass/_layout.scss */
+    .js .responsive-tabs .responsive-tabs__heading:hover {
+      color: #443333 !important; }
+    /* line 483, assets/sass/_layout.scss */
+    .js .responsive-tabs .responsive-tabs__heading::after {
+      border-left: 6px solid transparent !important;
+      border-right: 6px solid transparent !important;
+      border-top: 6px solid #bb8855 !important; }
+    /* line 489, assets/sass/_layout.scss */
+    .js .responsive-tabs .responsive-tabs__heading--active {
+      background-color: transparent !important;
+      color: #bb8855 !important; }
+      /* line 493, assets/sass/_layout.scss */
+      .js .responsive-tabs .responsive-tabs__heading--active:hover {
+        color: #443333 !important; }
+      /* line 497, assets/sass/_layout.scss */
+      .js .responsive-tabs .responsive-tabs__heading--active::after {
+        border-left: 6px solid transparent !important;
+        border-right: 6px solid transparent !important;
+        border-bottom: 6px solid #bb8855 !important;
+        border-top: 0px solid transparent !important; }
+  /* line 505, assets/sass/_layout.scss */
+  .js .responsive-tabs .responsive-tabs__list__item {
+    border: 0 !important;
+    border-bottom: 3px solid transparent !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    color: #bb8855 !important; }
+  /* line 512, assets/sass/_layout.scss */
+  .js .responsive-tabs .responsive-tabs__list__item--active {
+    background-color: transparent !important;
+    border-bottom: 3px solid #bb8855 !important; }
+  /* line 516, assets/sass/_layout.scss */
+  .js .responsive-tabs .responsive-tabs__list__item:hover,
+  .js .responsive-tabs .responsive-tabs__list__item--active:hover {
+    color: #443333 !important; }
+  /* line 520, assets/sass/_layout.scss */
+  .js .responsive-tabs .responsive-tabs__panel {
+    background-color: transparent !important;
+    border-width: 1px 0 !important;
+    border-color: #bb8855 !important; }
+  /* line 525, assets/sass/_layout.scss */
+  .js .responsive-tabs ul.responsive-tabs__list {
+    margin-left: 0 !important; }
+
+/* VIDEO AT EDORAS
+-----------------------------------*/
+/* line 533, assets/sass/_layout.scss */
+#video-at-edoras {
+  margin-bottom: 1rem; }
+  /* line 535, assets/sass/_layout.scss */
+  #video-at-edoras .wp-video {
+    width: 300px !important; }
+  /* line 538, assets/sass/_layout.scss */
+  #video-at-edoras .mejs-container {
+    width: 300px !important;
+    height: 168px !important; }
+
+/*at post page*/
+/* line 546, assets/sass/_layout.scss */
+#post-351 .thumbnailed,
+#post-367 .thumbnailed {
+  display: none; }
+
+/* POSTS FILTER
+-------------------------------------------------------------- */
+/* line 553, assets/sass/_layout.scss */
+.advanced-filter-menu {
+  margin-bottom: 2rem; }
+  /* line 556, assets/sass/_layout.scss */
+  .advanced-filter-menu fieldset {
+    border: 0;
+    margin: 0 .5rem .5rem 0;
+    padding: 0;
+    display: inline-block; }
+  /* line 562, assets/sass/_layout.scss */
+  .advanced-filter-menu h2 {
+    position: absolute;
+    visibility: hidden; }
+
+/* line 567, assets/sass/_layout.scss */
+.js .advanced-filter-menu {
+  position: relative;
+  text-align: center; }
+  /* line 571, assets/sass/_layout.scss */
+  .js .advanced-filter-menu input {
+    position: absolute;
+    visibility: hidden; }
+  /* line 576, assets/sass/_layout.scss */
+  .js .advanced-filter-menu label {
+    cursor: pointer;
+    color: #588303;
+    text-align: center;
+    letter-spacing: 1px;
+    border: 2px solid #588303;
+    border-radius: 10px;
+    padding: .5rem 1rem; }
+    /* line 585, assets/sass/_layout.scss */
+    .js .advanced-filter-menu label:hover {
+      background-color: #588303;
+      color: white; }
+    /* line 590, assets/sass/_layout.scss */
+    .js .advanced-filter-menu label i {
+      margin-right: .5rem; }
+  /* line 595, assets/sass/_layout.scss */
+  .js .advanced-filter-menu #apply-filters {
+    position: absolute;
+    visibility: hidden; }
+
+/* line 600, assets/sass/_layout.scss */
+.alm-post {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  margin: 0 0 2rem 0;
+  box-sizing: border-box; }
+  /* line 605, assets/sass/_layout.scss */
+  .alm-post a {
+    color: #443333; }
+  /* line 608, assets/sass/_layout.scss */
+  .alm-post h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0; }
+  /* line 613, assets/sass/_layout.scss */
+  .alm-post p {
+    margin: 0; }
+  /* line 617, assets/sass/_layout.scss */
+  .alm-post--thumbnailed {
+    display: flex; }
+    /* line 620, assets/sass/_layout.scss */
+    .alm-post--thumbnailed .alm-post-thumbnail {
+      flex: 0 0 30%; }
+    /* line 623, assets/sass/_layout.scss */
+    .alm-post--thumbnailed .alm-post-info {
+      padding-left: 1rem; }
+
+/* line 629, assets/sass/_layout.scss */
+.js .alm-post {
+  cursor: pointer; }
+  /* line 632, assets/sass/_layout.scss */
+  .js .alm-post .wp-post-image {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+  /* line 637, assets/sass/_layout.scss */
+  .js .alm-post:hover .wp-post-image {
+    transform: scale(1.05); }
+  /* line 640, assets/sass/_layout.scss */
+  .js .alm-post:hover a {
+    text-decoration: underline; }
+
+/* GALLERY
+-------------------------------------------------------------- */
+/* line 650, assets/sass/_layout.scss */
+.gallery a {
+  display: inline-block; }
+/* line 654, assets/sass/_layout.scss */
+.gallery img {
+  border: 5px solid white !important;
+  display: inline-block; }
+
+/* PAGINATION
+-------------------------------------------------------------- */
+/* line 668, assets/sass/_layout.scss */
+#pagination a {
+  width: 100%; }
+/* line 671, assets/sass/_layout.scss */
+#pagination .past-page {
+  width: 50%; }
+  /* line 674, assets/sass/_layout.scss */
+  #pagination .past-page .button {
+    float: left; }
+/* line 679, assets/sass/_layout.scss */
+#pagination .next-page {
+  width: 50%; }
+  /* line 682, assets/sass/_layout.scss */
+  #pagination .next-page .button {
+    float: right; }
+
+/* line 687, assets/sass/_layout.scss */
+.thumbnailed {
+  margin-bottom: 1rem; }
+  /* line 690, assets/sass/_layout.scss */
+  .thumbnailed .entry-thumbnail {
+    float: right;
+    width: 35%; }
+  /* line 694, assets/sass/_layout.scss */
+  .thumbnailed .excerpt {
+    float: right;
+    width: 65%;
+    min-height: 1px; }
+  /* line 699, assets/sass/_layout.scss */
+  .thumbnailed .entry-thumbnail {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-right: 1rem; }
+
+/* SPOTLIGHTS
+-----------------------------------*/
+/* line 708, assets/sass/_layout.scss */
+#showcase .widget {
+  float: left;
+  width: 100%;
+  clear: both; }
+/* line 713, assets/sass/_layout.scss */
+#showcase .cat-post-item {
+  float: left;
+  width: calc(50% - .5rem); }
+/* line 717, assets/sass/_layout.scss */
+#showcase .cat-post-item:nth-of-type(2n) {
+  margin-left: .5rem; }
+/* line 720, assets/sass/_layout.scss */
+#showcase .cat-post-item:nth-of-type(2n+1) {
+  clear: left;
+  margin-right: .5rem; }
+
+/* CATEGORY TEMPLATE
+-------------------------------------------------------------- */
+/* line 729, assets/sass/_layout.scss */
+.category .feature {
+  float: left;
+  width: calc(50% - .5rem); }
+/* line 733, assets/sass/_layout.scss */
+.category .feature:nth-of-type(2n) {
+  margin-left: .5rem; }
+/* line 736, assets/sass/_layout.scss */
+.category .feature:nth-of-type(2n+1) {
+  clear: left;
+  margin-right: .5rem; }
+
+/* POSTS FILTER
+--------------------------------------------------------------*/
+/* line 747, assets/sass/_layout.scss */
+.alm-listing {
+  display: flex;
+  flex-wrap: wrap; }
+
+/* line 751, assets/sass/_layout.scss */
+.alm-post {
+  border: 10px solid white;
+  padding: 0;
+  box-sizing: border-box;
+  flex: 0 0 calc((100% - 2rem)/2); }
+  /* line 755, assets/sass/_layout.scss */
+  .alm-post:nth-of-type(odd) {
+    margin-right: 2rem; }
+  /* line 759, assets/sass/_layout.scss */
+  .alm-post--thumbnailed {
+    display: block; }
+    /* line 762, assets/sass/_layout.scss */
+    .alm-post--thumbnailed .alm-post-thumbnail {
+      background-color: #ddee99;
+      padding: .5rem 4rem;
+      flex: none; }
+    /* line 766, assets/sass/_layout.scss */
+    .alm-post--thumbnailed .alm-post-info {
+      padding: 1rem; }
+
+/* VIDEOS
+-----------------------------------*/
+/* line 784, assets/sass/_layout.scss */
+#video-at-edoras,
+#video-evergreen {
+  float: right;
+  clear: right;
+  margin-left: 1rem; }
+
+/* line 791, assets/sass/_layout.scss */
+#post-351 #presentation-video-at-edoras {
+  padding-left: 55%; }
+/* line 794, assets/sass/_layout.scss */
+#post-351 #video-at-edoras {
+  float: left;
+  clear: left; }
+
+/* line 800, assets/sass/_layout.scss */
+#post-367 #presentation-video-evergreen {
+  padding-left: 55%; }
+/* line 803, assets/sass/_layout.scss */
+#post-367 #video-evergreen {
+  float: left;
+  clear: left; }
+
+/* POSTS FILTER
+--------------------------------------------------------------*/
+/* line 811, assets/sass/_layout.scss */
+.alm-post {
+  flex: 0 0 calc((100% - 4rem)/3); }
+  /* line 814, assets/sass/_layout.scss */
+  .alm-post:nth-of-type(odd) {
+    margin-right: 0; }
+  /* line 817, assets/sass/_layout.scss */
+  .alm-post:nth-of-type(3n+1), .alm-post:nth-of-type(3n+2) {
+    margin-right: 2rem; }
+
+/* line 825, assets/sass/_layout.scss */
+#main {
+  border: none 0;
+  width: 100%;
+  float: left; }
+
+/* line 831, assets/sass/_layout.scss */
+#sidebar {
+  border: none;
+  float: left;
+  margin: 0;
+  width: 30%; }
+
+/* CATEGORY TEMPLATE
+-------------------------------------------------------------- */
+/* line 840, assets/sass/_layout.scss */
+.category #main {
+  width: auto;
+  float: none; }
+
+/* VIDEO AT EDORAS
+-----------------------------------*/
+/* line 848, assets/sass/_layout.scss */
+#video-at-edoras .wp-video {
+  width: 400px !important; }
+/* line 851, assets/sass/_layout.scss */
+#video-at-edoras .mejs-container {
+  width: 400px !important;
+  height: 224px !important; }
+
+/* line 860, assets/sass/_layout.scss */
+#header {
+  float: left;
+  width: 20%; }
+
+/* line 864, assets/sass/_layout.scss */
+#main {
+  width: 80%; }
+
+/* line 867, assets/sass/_layout.scss */
+#page {
+  padding: 0 0 2rem 0; }
+
+/* line 871, assets/sass/_layout.scss */
+.js #page {
+  padding: 0 0 3rem 0; }
+/* line 874, assets/sass/_layout.scss */
+.js #header {
+  float: left;
+  position: static;
+  width: 20%;
+  z-index: 0; }
+/* line 880, assets/sass/_layout.scss */
+.js #mobile-sticky-navigation {
+  display: none; }
+/* line 883, assets/sass/_layout.scss */
+.js .show-mobile-nav #container {
+  background-color: transparent;
+  border-left: none 0;
+  opacity: 1;
+  position: static;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none; }
+/* line 890, assets/sass/_layout.scss */
+.js .show-mobile-nav #site-info {
+  display: block; }
+
+/* CATEGORY TEMPLATE
+-------------------------------------------------------------- */
+/* line 897, assets/sass/_layout.scss */
+.category #main {
+  width: 80%;
+  float: left; }
+/* line 901, assets/sass/_layout.scss */
+.category .feature {
+  padding: calc(209px + 1rem) 1rem 1rem 1rem; }
+/* line 904, assets/sass/_layout.scss */
+.category .feature:nth-of-type(2n) {
+  margin-left: 0; }
+/* line 907, assets/sass/_layout.scss */
+.category .feature:nth-of-type(2n+1) {
+  clear: none;
+  margin-right: 0; }
+/* line 911, assets/sass/_layout.scss */
+.category .feature:nth-of-type(3n) {
+  width: calc(33.33% - .75rem);
+  margin-left: .75rem; }
+/* line 915, assets/sass/_layout.scss */
+.category .feature:nth-of-type(3n+1) {
+  clear: left;
+  width: calc(33.33% - .75rem);
+  margin-right: .75rem; }
+/* line 920, assets/sass/_layout.scss */
+.category .feature:nth-of-type(3n+2) {
+  width: calc(33.33% - .5rem);
+  margin-right: .25rem;
+  margin-left: .25rem; }
+/* line 925, assets/sass/_layout.scss */
+.category .entry-thumbnail {
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 0; }
+  /* line 930, assets/sass/_layout.scss */
+  .category .entry-thumbnail img {
+    max-width: 249px; }
+/* line 934, assets/sass/_layout.scss */
+.category h2 {
+  margin-top: 1rem; }
+
+/* SPOTLIGHTS
+-----------------------------------*/
+/* line 941, assets/sass/_layout.scss */
+#showcase .cat-post-item {
+  padding: calc(200px + 4rem) 1rem 1rem 1rem !important; }
+/* line 944, assets/sass/_layout.scss */
+#showcase a:not(.post-title) {
+  left: 0;
+  top: 1rem;
+  width: 100%;
+  text-align: center;
+  z-index: 0; }
+  /* line 950, assets/sass/_layout.scss */
+  #showcase a:not(.post-title) img {
+    max-width: 227px; }
+
+/* POSTS FILTER
+--------------------------------------------------------------*/
+/* line 961, assets/sass/_layout.scss */
+.alm-post {
+  flex: 0 0 25%; }
+
+/*
+*************************************************
+ * print media
+*************************************************
+*/
+/* end @media print*/

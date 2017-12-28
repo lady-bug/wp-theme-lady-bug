@@ -1,0 +1,19 @@
+/*
+***************************************************************************************
+ * LEGACY STYLE FILE
+ * NO MEDIA QUERIES VERSION
+***************************************************************************************
+ */
+
+/* SASS & COMPASS
+ *  RUBY RAILS
+ *  compass watch /wp-content/themes/lady-bug
+ *  _name-file.scss won't be compiled, only legacy-style.scss will be parsed
+-----------------------------------------------------------------------*/
+$mqs: false;
+@import "_antiscreen";
+@import "_variables";
+@import "_fonts";
+@import "_generic";
+@import "_accessible";
+@import "_layout";

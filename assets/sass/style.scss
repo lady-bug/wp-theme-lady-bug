@@ -1,0 +1,25 @@
+/*
+***************************************************************************************
+ * Theme Name:      lady-bug
+ * Description:     Mobile first responsive theme.
+ * Author:          Valerie Hanesse
+ * Author URI:      http://www.lady-bug.info/
+ * Version:         1.0
+ * License:         GNU General Public License v3.0
+ * License URI:     http://www.gnu.org/licenses/gpl-3.0.html
+***************************************************************************************
+ */
+
+/* SASS & COMPASS
+ *  RUBY RAILS
+ *  compass watch /wp-content/themes/lady-bug
+ *  _name-file.scss won't be compiled, only style.scss will be parsed
+-----------------------------------------------------------------------*/
+$mqs: true;
+@import "_antiscreen";
+@import "_variables";
+@import "_fonts";
+@import "_generic";
+@import "_accessible";
+@import "_layout";
+@import "_accordions";

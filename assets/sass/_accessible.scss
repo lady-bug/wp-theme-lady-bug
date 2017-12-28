@@ -1,0 +1,38 @@
+/* Skip & Accessibile Elements
+----------------------------------------------*/
+.accessible,.nav p span{
+    border:0;
+    clip:rect(0 0 0 0);
+    height:1px;
+    margin:-1px;
+    overflow:hidden;
+    padding:0;
+    position:absolute;
+    width:1px;
+}
+.skip{
+    left:0;
+    position: absolute;
+    text-align:center;
+    top:0;
+    width:100%;
+}
+.skip ul,.skip ol{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+.skip a,.skip a:link{
+	left:-99999px;
+	position:absolute;
+	top:30px;
+	font:700 2rem/1.5 Quicksand;
+	/*margin:0 auto;*/
+	padding:.5em;
+	text-decoration:none;
+	width:75%;
+	z-index:9999;
+}
+.skip a:focus,.skip a:active{
+	left:10%;
+}
