@@ -564,37 +564,38 @@ a:focus [class^="icon-"], a:focus [class*=" icon-"],
     visibility: hidden;
   }
 }
-.js .advanced-filter-menu{
-  position: relative;
-  text-align: center;
-
-  input{
-    position: absolute;
-    visibility: hidden;
-  }
-
-  label{
-    cursor: pointer;
-    color: $s-green;
+.js{
+  .advanced-filter-menu{
+    position: relative;
     text-align: center;
-    letter-spacing: 1px;
-    border: 2px solid $s-green;
-    border-radius: 10px;
-    padding:.5rem 1rem;
 
-    &:hover{
-      background-color: $s-green;
-      color: white;
+    input{
+      position: absolute;
+      visibility: hidden;
     }
 
-    i{
-      margin-right: .5rem;
+    label{
+      cursor: pointer;
+      color: $s-green;
+      text-align: center;
+      letter-spacing: 1px;
+      border: 2px solid $s-green;
+      border-radius: 10px;
+      padding:.5rem 1rem;
+
+      i{
+        margin-right: .5rem;
+      }
+    }
+
+    #apply-filters{
+      position: absolute;
+      visibility: hidden;
     }
   }
-
-  #apply-filters{
-    position: absolute;
-    visibility: hidden;
+  &.no-touch .advanced-filter-menu label:hover{
+    background-color: $s-green;
+    color: white;
   }
 }
 .alm-post{
