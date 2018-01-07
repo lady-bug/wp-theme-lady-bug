@@ -473,12 +473,6 @@ th {
   src: url('assets/fonts/tuffy/Tuffy_Bold_Italic-webfont.eot?&1514456699#iefix') format('embedded-opentype'), url('assets/fonts/tuffy/Tuffy_Bold_Italic-webfont.woff?1514456698') format('woff'), url('assets/fonts/tuffy/Tuffy_Bold_Italic-webfont.ttf?1514456699') format('truetype'), url('assets/fonts/tuffy/Tuffy_Bold_Italic-webfont.svg?1514456699#Tuffy') format('svg');
   font-weight: 700;
   font-style: oblique; }
-@font-face {
-  font-family: "icomoon";
-  src: url('assets/fonts/icomoon/icomoon.eot?q6kam8');
-  src: url('assets/fonts/icomoon/icomoon.eot?q6kam8?#iefix') format('embedded-opentype'), url('assets/fonts/icomoon/icomoon.woff?q6kam8') format('woff'), url('assets/fonts/icomoon/icomoon.ttf?q6kam8') format('truetype'), url('assets/fonts/icomoon/icomoon.svg?q6kam8#icomoon') format('svg');
-  font-weight: 400;
-  font-style: normal; }
 /* Generic
 -------------------------------------------------------------- */
 /* line 3, assets/sass/_generic.scss */

@@ -46,14 +46,3 @@
     700,
     oblique
 );
-@include font-face (
-	'icomoon',
-        font-files(
-            'icomoon/icomoon.woff?q6kam8',
-            'icomoon/icomoon.ttf?q6kam8',
-            'icomoon/icomoon.svg?q6kam8#icomoon'
-        ),
-        'icomoon/icomoon.eot?q6kam8',
-        400,
-        normal
-);
