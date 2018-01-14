@@ -95,10 +95,8 @@
             <div id="site-about"><p><?php echo get_theme_mod( 'about_textarea', '' ); ?></p></div>
             <div id="site-linked-in">
                 <p>
-                    <a title="linkedin profile" target="_blank" href="<?php echo get_theme_mod( 'linkedin_text', '' ); ?>"><i class="fab fa-linkedin fa-lg"></i></a>
-                    <?php
-		                 /*<a target="_blank" href="<?php echo get_theme_mod( 'github_text', '' ); ?>">github</a>*/
-                    ?>
+                  <a title="linkedin profile" target="_blank" href="<?php echo get_theme_mod( 'linkedin_text', '' ); ?>"><i class="fab fa-linkedin fa-lg"></i></a>
+                  <a title="github profile" target="_blank" href="<?php echo get_theme_mod( 'github_text', '' ); ?>"><i class="fab fa-github fa-lg"></i></a>
                 </p>
             </div>
         </section></div>
