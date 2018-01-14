@@ -1466,68 +1466,79 @@ a:focus [class^="icon-"], a:focus [class*=" icon-"],
   /* line 754, assets/sass/_layout.scss */
   .alm-post {
     border: 10px solid white;
+    border-width: 10px 10px 30px 10px;
     padding: 0;
     box-sizing: border-box;
-    flex: 0 0 calc((100% - 2rem)/2); }
-    /* line 760, assets/sass/_layout.scss */
+    flex: 0 0 calc((100% - 2rem)/2);
+    position: relative; }
+    /* line 762, assets/sass/_layout.scss */
     .alm-post:nth-of-type(odd) {
       margin-right: 2rem; }
-    /* line 764, assets/sass/_layout.scss */
+    /* line 766, assets/sass/_layout.scss */
+    .alm-post .alm-post-category {
+      position: absolute;
+      left: 1rem;
+      bottom: -25px;
+      width: calc(100% - 2rem); }
+      /* line 772, assets/sass/_layout.scss */
+      .alm-post .alm-post-category i {
+        float: right; }
+    /* line 777, assets/sass/_layout.scss */
     .alm-post--thumbnailed {
       display: block; }
-      /* line 767, assets/sass/_layout.scss */
+      /* line 780, assets/sass/_layout.scss */
       .alm-post--thumbnailed .alm-post-thumbnail {
         background-color: #ddee99;
         padding: .5rem 4rem;
         flex: none; }
-      /* line 772, assets/sass/_layout.scss */
+      /* line 785, assets/sass/_layout.scss */
       .alm-post--thumbnailed .alm-post-info {
         padding: 1rem; } }
 @media only screen and (min-device-width: 48em) and (min-width: 48em), only screen and (min-device-width: 48em) and (min-width: 48em) and (min-aspect-ratio: 1 / 1) {
   /* VIDEOS
   -----------------------------------*/
-  /* line 790, assets/sass/_layout.scss */
+  /* line 794, assets/sass/_layout.scss */
   #video-at-edoras,
   #video-evergreen {
     float: right;
     clear: right;
     margin-left: 1rem; }
 
-  /* line 797, assets/sass/_layout.scss */
+  /* line 801, assets/sass/_layout.scss */
   #post-351 #presentation-video-at-edoras {
     padding-left: 55%; }
-  /* line 800, assets/sass/_layout.scss */
+  /* line 804, assets/sass/_layout.scss */
   #post-351 #video-at-edoras {
     float: left;
     clear: left; }
 
-  /* line 806, assets/sass/_layout.scss */
+  /* line 810, assets/sass/_layout.scss */
   #post-367 #presentation-video-evergreen {
     padding-left: 55%; }
-  /* line 809, assets/sass/_layout.scss */
+  /* line 813, assets/sass/_layout.scss */
   #post-367 #video-evergreen {
     float: left;
     clear: left; }
 
   /* POSTS FILTER
   --------------------------------------------------------------*/
-  /* line 817, assets/sass/_layout.scss */
+  /* line 821, assets/sass/_layout.scss */
   .alm-post {
     flex: 0 0 calc((100% - 4rem)/3); }
-    /* line 820, assets/sass/_layout.scss */
+    /* line 824, assets/sass/_layout.scss */
     .alm-post:nth-of-type(odd) {
       margin-right: 0; }
-    /* line 823, assets/sass/_layout.scss */
+    /* line 827, assets/sass/_layout.scss */
     .alm-post:nth-of-type(3n+1), .alm-post:nth-of-type(3n+2) {
       margin-right: 2rem; } }
 @media only screen and (min-device-width: 60em) and (min-width: 60em), only screen and (min-device-width: 60em) and (min-width: 60em) and (min-aspect-ratio: 1 / 1) {
-  /* line 831, assets/sass/_layout.scss */
+  /* line 835, assets/sass/_layout.scss */
   #main {
     border: none 0;
     width: 100%;
     float: left; }
 
-  /* line 837, assets/sass/_layout.scss */
+  /* line 841, assets/sass/_layout.scss */
   #sidebar {
     border: none;
     float: left;
@@ -1536,47 +1547,47 @@ a:focus [class^="icon-"], a:focus [class*=" icon-"],
 
   /* CATEGORY TEMPLATE
   -------------------------------------------------------------- */
-  /* line 846, assets/sass/_layout.scss */
+  /* line 850, assets/sass/_layout.scss */
   .category #main {
     width: auto;
     float: none; }
 
   /* VIDEO AT EDORAS
   -----------------------------------*/
-  /* line 854, assets/sass/_layout.scss */
+  /* line 858, assets/sass/_layout.scss */
   #video-at-edoras .wp-video {
     width: 400px !important; }
-  /* line 857, assets/sass/_layout.scss */
+  /* line 861, assets/sass/_layout.scss */
   #video-at-edoras .mejs-container {
     width: 400px !important;
     height: 224px !important; } }
 @media only screen and (min-device-width: 64em) and (min-width: 64em), only screen and (min-device-width: 64em) and (min-width: 64em) and (min-aspect-ratio: 1 / 1) {
-  /* line 866, assets/sass/_layout.scss */
+  /* line 870, assets/sass/_layout.scss */
   #header {
     float: left;
     width: 20%; }
 
-  /* line 870, assets/sass/_layout.scss */
+  /* line 874, assets/sass/_layout.scss */
   #main {
     width: 80%; }
 
-  /* line 873, assets/sass/_layout.scss */
+  /* line 877, assets/sass/_layout.scss */
   #page {
     padding: 0 0 2rem 0; }
 
-  /* line 877, assets/sass/_layout.scss */
+  /* line 881, assets/sass/_layout.scss */
   .js #page {
     padding: 0 0 3rem 0; }
-  /* line 880, assets/sass/_layout.scss */
+  /* line 884, assets/sass/_layout.scss */
   .js #header {
     float: left;
     position: static;
     width: 20%;
     z-index: 0; }
-  /* line 886, assets/sass/_layout.scss */
+  /* line 890, assets/sass/_layout.scss */
   .js #mobile-sticky-navigation {
     display: none; }
-  /* line 889, assets/sass/_layout.scss */
+  /* line 893, assets/sass/_layout.scss */
   .js .show-mobile-nav #container {
     background-color: transparent;
     border-left: none 0;
@@ -1587,78 +1598,78 @@ a:focus [class^="icon-"], a:focus [class*=" icon-"],
     -ms-transform: none;
     -o-transform: none;
     transform: none; }
-  /* line 896, assets/sass/_layout.scss */
+  /* line 900, assets/sass/_layout.scss */
   .js .show-mobile-nav #site-info {
     display: block; }
 
   /* CATEGORY TEMPLATE
   -------------------------------------------------------------- */
-  /* line 903, assets/sass/_layout.scss */
+  /* line 907, assets/sass/_layout.scss */
   .category #main {
     width: 80%;
     float: left; }
-  /* line 907, assets/sass/_layout.scss */
+  /* line 911, assets/sass/_layout.scss */
   .category .feature {
     padding: calc(209px + 1rem) 1rem 1rem 1rem; }
-  /* line 910, assets/sass/_layout.scss */
+  /* line 914, assets/sass/_layout.scss */
   .category .feature:nth-of-type(2n) {
     margin-left: 0; }
-  /* line 913, assets/sass/_layout.scss */
+  /* line 917, assets/sass/_layout.scss */
   .category .feature:nth-of-type(2n+1) {
     clear: none;
     margin-right: 0; }
-  /* line 917, assets/sass/_layout.scss */
+  /* line 921, assets/sass/_layout.scss */
   .category .feature:nth-of-type(3n) {
     width: calc(33.33% - .75rem);
     margin-left: .75rem; }
-  /* line 921, assets/sass/_layout.scss */
+  /* line 925, assets/sass/_layout.scss */
   .category .feature:nth-of-type(3n+1) {
     clear: left;
     width: calc(33.33% - .75rem);
     margin-right: .75rem; }
-  /* line 926, assets/sass/_layout.scss */
+  /* line 930, assets/sass/_layout.scss */
   .category .feature:nth-of-type(3n+2) {
     width: calc(33.33% - .5rem);
     margin-right: .25rem;
     margin-left: .25rem; }
-  /* line 931, assets/sass/_layout.scss */
+  /* line 935, assets/sass/_layout.scss */
   .category .entry-thumbnail {
     left: 0;
     width: 100%;
     text-align: center;
     z-index: 0; }
-    /* line 936, assets/sass/_layout.scss */
+    /* line 940, assets/sass/_layout.scss */
     .category .entry-thumbnail img {
       max-width: 249px; }
-  /* line 940, assets/sass/_layout.scss */
+  /* line 944, assets/sass/_layout.scss */
   .category h2 {
     margin-top: 1rem; }
 
   /* SPOTLIGHTS
   -----------------------------------*/
-  /* line 947, assets/sass/_layout.scss */
+  /* line 951, assets/sass/_layout.scss */
   #showcase .cat-post-item {
     padding: calc(200px + 4rem) 1rem 1rem 1rem !important; }
-  /* line 950, assets/sass/_layout.scss */
+  /* line 954, assets/sass/_layout.scss */
   #showcase a:not(.post-title) {
     left: 0;
     top: 1rem;
     width: 100%;
     text-align: center;
     z-index: 0; }
-    /* line 956, assets/sass/_layout.scss */
+    /* line 960, assets/sass/_layout.scss */
     #showcase a:not(.post-title) img {
       max-width: 227px; } }
 @media only screen and (min-device-width: 80em) and (min-width: 80em), only screen and (min-device-width: 80em) and (min-width: 80em) and (min-aspect-ratio: 1 / 1) {
   /* POSTS FILTER
   --------------------------------------------------------------*/
-  /* line 967, assets/sass/_layout.scss */
+  /* line 971, assets/sass/_layout.scss */
   .alm-post {
     flex: 0 0 calc((100% - 6rem)/4); }
-    /* line 970, assets/sass/_layout.scss */
+    /* line 974, assets/sass/_layout.scss */
     .alm-post:nth-of-type(3n+1), .alm-post:nth-of-type(3n+2) {
       margin-right: 0; }
-    /* line 975, assets/sass/_layout.scss */
+    /* line 979, assets/sass/_layout.scss */
     .alm-post:nth-of-type(4n+1), .alm-post:nth-of-type(4n+2), .alm-post:nth-of-type(4n+3) {
       margin-right: 2rem; } }
 /*
