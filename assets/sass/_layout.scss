@@ -542,6 +542,13 @@ a:focus [class^="icon-"], a:focus [class*=" icon-"],
     height:168px !important;
   }
 }
+#sidebar-profile {
+  .svg-pie-language{
+    width: 100px;
+    height: 100px;
+  }
+}
+
 /*at post page*/
 #post-351,
 #post-367{
@@ -665,6 +672,15 @@ a:focus [class^="icon-"], a:focus [class*=" icon-"],
 }
 
 @include respond-to(xs) {
+  /* PROFILE PAGE
+  -------------------------------------------------------------- */
+  #sidebar-profile {
+    width: 48%;
+    float: left;
+    &:nth-of-type(2){
+      margin-left: 4%;
+    }
+  }
     /* PAGINATION
     -------------------------------------------------------------- */
     #pagination{
@@ -790,6 +806,7 @@ a:focus [class^="icon-"], a:focus [class*=" icon-"],
     }
 }
 @include respond-to(s) {
+
   /* VIDEOS
   -----------------------------------*/
   #video-at-edoras,
@@ -868,6 +885,14 @@ a:focus [class^="icon-"], a:focus [class*=" icon-"],
 
 }
 @include respond-to(xm) {
+  /* PROFILE PAGE
+  -------------------------------------------------------------- */
+  #sidebar-profile {
+    .svg-pie-language{
+      width: 115px;
+      height: 115px;
+    }
+  }
     #header{
         float:left;
         width:20%;
@@ -967,6 +992,14 @@ a:focus [class^="icon-"], a:focus [class*=" icon-"],
 }
 
 @include respond-to(l) {
+  /* PROFILE PAGE
+  -------------------------------------------------------------- */
+  #sidebar-profile {
+    .svg-pie-language{
+      width: 140px;
+      height: 140px;
+    }
+  }
   /* POSTS FILTER
   --------------------------------------------------------------*/
   .alm-post {
