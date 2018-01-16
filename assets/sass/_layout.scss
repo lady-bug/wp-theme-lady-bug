@@ -543,6 +543,7 @@ a:focus [class^="icon-"], a:focus [class*=" icon-"],
   }
 }
 #sidebar-profile {
+  margin-bottom: 1rem;
   .svg-pie-language{
     width: 100px;
     height: 100px;
@@ -632,6 +633,11 @@ a:focus [class^="icon-"], a:focus [class*=" icon-"],
     }
     .alm-post-info{
       padding-left: 1rem;
+    }
+    .alm-post-category{
+      .category{
+        display: none;
+      }
     }
   }
 }
@@ -788,6 +794,9 @@ a:focus [class^="icon-"], a:focus [class*=" icon-"],
 
         i{
           float: right;
+        }
+        .category{
+          display: block;
         }
       }
 
