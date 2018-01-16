@@ -633,6 +633,7 @@ a:focus [class^="icon-"], a:focus [class*=" icon-"],
     }
     .alm-post-info{
       padding-left: 1rem;
+      flex-grow: 1;
     }
     .alm-post-category{
       .category{
@@ -796,7 +797,7 @@ a:focus [class^="icon-"], a:focus [class*=" icon-"],
           float: right;
         }
         .category{
-          display: block;
+          display: inline-block;
         }
       }
 
@@ -810,6 +811,7 @@ a:focus [class^="icon-"], a:focus [class*=" icon-"],
         }
         .alm-post-info{
           padding:1rem;
+          flex-grow: none;
         }
       }
     }
