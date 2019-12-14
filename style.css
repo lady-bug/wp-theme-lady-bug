@@ -1290,7 +1290,8 @@ a:focus [class^="icon-"], a:focus [class*=" icon-"],
 /*at post page*/
 /* line 556, assets/sass/_layout.scss */
 #post-351 .thumbnailed,
-#post-367 .thumbnailed {
+#post-367 .thumbnailed,
+#post-671 .thumbnailed {
   display: none; }
 
 /* POSTS FILTER

@@ -43,11 +43,16 @@
         </article>
         </div>
     <?php endwhile; ?>
+
+<?php if ( !is_attachment() ) : ?>
+
     <!-- pagintation -->
     <div id="pagination" class="clearfix">
             <div class="past-page"><?php previous_post_link( '%link', '<span class="button">&lsaquo;</span> <span class="item">Previous</span><span class="title">%title</span>', true); ?></div>
             <div class="next-page"><?php next_post_link( '%link', '<span class="item">Next</span> <span class="button">&rsaquo;</span><span class="title">%title</span>', true); ?></div>
     </div><!-- pagination -->
+  
+<?php endif; ?>
 
     <?php
         // If comments are open or we have at least one comment, load up the default comment template provided by Wordpress
